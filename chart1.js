@@ -127,7 +127,7 @@ function drawchart(data) {
 				.attr("fill", function(d){return color(d.Year);});
 		updatepoint.select("title")
 			.text(function(d) {return d.Country_Code + "\n" + d.Country_Name + "\n" + d.Region + "\n" + d.IncomeGroup 
-			+ "\nUso de Energía: "	+ Math.round(d.Watts_per_Person) +" Watts por persona \nMortalidad Infantil: "+d.Infant_Mortality +"\nAño: " +d.Year;});
+			+ "\nEnergy Use: "	+ Math.round(d.Watts_per_Person) +" Watts per capita \nInfant Mortality Rate: "+d.Infant_Mortality +"\nYear: " +d.Year;});
 
 // Eje y
 	yAxis = d3.axisLeft(y);
@@ -145,7 +145,7 @@ function drawchart(data) {
 				.attr("dy","1em")
 				.attr("transform", "rotate(270)")
 				.style("text-anchor","end")
-				.text("Mortalidad Infantil - Casos cada 1000 nacimientos vivos");
+				.text("Infant Mortality Rate - Cases per 1000 live births");
 				
 //Eje x
 	xAxis = d3.axisBottom(x);
@@ -169,7 +169,7 @@ function drawchart(data) {
 			.attr("dy","-0.75em")
 			.append ("text")
 				.style("text-anchor","end")
-				.text("Uso de Energía en Watts por persona");
+				.text("Average Energy Use - Watts per capita");
 				
 		updatepoint.transition().duration(tr) 
 			.attr("transform", function(d, i) { return "translate("+ d.xc + ", "+ d.yc +" )"; });

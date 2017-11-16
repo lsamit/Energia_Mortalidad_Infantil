@@ -32,12 +32,12 @@ div .inchart {
 
 <body>
 
-<h2> Uso de Energía vs Mortalidad Infantil 1984 - 1999 - 2013 </h2>
+<h2> Country Energy Use vs Infant Mortality Rate for Years 1984, 1999 and 2013 </h2>
 <div class="chartcontainer">
 	<svg class="chart"></svg>
 	<div class="inchart" style="top:0px;left:960px">
 		<form>
-			<p>Seleccionar Año </p>
+			<p>Select Year </p>
 			<label>
 				<input class="yearinput y1984" type="radio" name="radio_b" value="1984" />
 				1984
@@ -54,7 +54,7 @@ div .inchart {
 			</label>
 			<br>
 			<br>
-			<p>Seleccionar Pais </p>
+			<p>Select Country </p>
 			<select class="selectcountry" name="selectcountry">
 			</select> 
 		</form>
@@ -62,11 +62,13 @@ div .inchart {
 </div>
 
  <div><span><small>
-		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>	&copy; 2017 - Luciano Samitier<br />
-
-		This work is licensed under a <a rel="license" href="http://reativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a><br />
-		Infant Mortality Rate and Population Data from World Bank "World Development Indicators" <br />
-		Energy data retrieved from United States Energy Information Agency<br />
+		<a href="LICENSE">
+			 <img src="https://img.shields.io/badge/License-BSD--3%20Clause-orange.svg" alt="License:BSD-3 Clause"> 
+		</a>
+		&copy; 2017 - Luciano Samitier<br />
+	
+		Infant Mortality Rate and Population Data obtained from World Bank "World Development Indicators" <br />
+		Energy data retrieved obtained from United States Energy Information Agency<br />
 </small></span></div>
 
 <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
